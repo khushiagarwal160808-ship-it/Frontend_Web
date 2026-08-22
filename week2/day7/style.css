@@ -1,0 +1,81 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: black;
+    border: 1px solid black;
+    box-shadow: 0 2px 4px rgba(210, 8, 163, 0.786);
+}  
+
+.navbar .logo {
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navbar nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.nav-links a{
+    color: pink;
+    margin-left: 6%
+}
+.navbar .button-container {
+    display: flex;
+    gap: 10px;
+}
+.parent div{
+    font-size: medium;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* styles for the parent container */
+}
+.btn {
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: medium;
+    box-shadow: 0 2px 4px rgba(210, 8, 163, 0.786);
+    display: flex;
+
+}
+.body {
+    background-color: rgb(255, 207, 255);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.title {
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 50px;
+    font-size: 24px;
+    color: rgb(255, 207, 255);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    flex-direction: row;
+}
