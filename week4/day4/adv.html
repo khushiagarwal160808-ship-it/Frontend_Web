@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <script>
+        fetch("https://reqres.in/api/users")
+            .then((res) => res.json())
+            .then((res) => showData(res.data))
+            .catch((err) => console.log(err));
+            let container=document.querySelector(".container");
+        function showData(data) {
+            for(let i=0;i<data.length;i++){
+            let h1=document.createElement("h1");
+            h1.textContent=data[i].email
+            let img=document.createElement("img");
+            img.src=data[i].avatar;
+            container.append(img,h1);
+            }
+        }
+    </script>
+</body>
+</html>
